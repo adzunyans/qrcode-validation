@@ -1,10 +1,28 @@
 <html>
   <head>
     <script src="jimp.min.js"></script>
+    <style>
+      .result {
+        margin-top: 20px;
+        display: flex;
+      }
+      canvas {
+        height: 200px;
+        margin-right: 20px;
+      }
+    </style>
   </head>
   <body>
-    QRCodeテスト
+    <h1>QRCodeテスト</h1>
     <input type="file" class="file" />
-    <script src="dist/bundle.js"></script>
+    <section>
+      <h2>画像</h2>
+      <canvas id="canvas"></canvas>
+    </section>
+    <section>
+      <h2>リザルト</h2>
+      <div class="results"></div>
+    </section>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>
